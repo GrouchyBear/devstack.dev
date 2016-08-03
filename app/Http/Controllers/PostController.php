@@ -21,7 +21,7 @@ class PostController extends Controller
     public function postCreatePost(Request $request)
     {
         $this->validate($request, [
-            'body' => 'required|max:1000'
+            'body' => 'required|max:2000'
         ]);
         $post = new Post();
         $post->body = $request['body'];

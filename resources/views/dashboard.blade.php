@@ -2,25 +2,10 @@
 
 @section('content')
 
-    <section class="row new-post">
-        <div class="col-md-6 col-md-offset-3">
-            <header><h3>what do you have to share?</h3></header>
-            @include('includes.message-block')
-            <form action="{{route('post.create')}}" method="post">
-                <div class="form-group">
-                    <textarea class="post-t" name="body" id="new-post" rows="5" placeholder="Your Post"></textarea>
-                </div>
-                {{ csrf_field() }}
-                <input type="hidden" value="{{Session::token()}}" name="_token">
-                <button type="submit" class="btn btn-primary">Publish</button>
-            </form>
-        </div>
-
-
-    </section>
     <section class="row posts">
         <div class="col-md-6 col-md-offset-3">
             <header><h3>What other people have posted...</h3></header>
+
             @foreach($posts as $post)
                 <article class="post" data-postid="{{ $post->id }}">
                     <p>{{ $post->body }}</p>

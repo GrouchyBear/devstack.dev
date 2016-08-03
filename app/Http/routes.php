@@ -46,6 +46,11 @@ Route::post('/edit', [
     'as' => 'edit'
 ]);
 
+Route::get('/create',[
+    'uses'  => 'UserController@create',
+    'as'    => 'create'
+]);
+
 
 
 /*
@@ -110,6 +115,11 @@ Route::post('/signup', [
     'as' => 'signup'
 ]);
 
+Route::get('/profile',[
+    'uses'  => 'UserController@profile',
+    'as'    => 'profile'
+]);
+
 /*
 |--------------------------------------------------------------------------
 | End of Working Routes
@@ -122,13 +132,3 @@ Route::post('/signup', [
 | Experimental Routes
 |--------------------------------------------------------------------------
 */
-
-Route::post('/feed-x', function(Illuminate\Http\Request $request){
-    $content = $request['content'];
-    return view('output', ['content' => $content]);
-})->name('feed-x');
-
-Route::get('/output', [
-    'uses'  => 'UserController@output',
-    'as'    => 'output'
-]);

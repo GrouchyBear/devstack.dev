@@ -8,7 +8,8 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
         "intervention/image": "^2.3",
-        "vinelab/laravel-editor": "^1.0.3"
+        "vinelab/laravel-editor": "^1.0.3",
+        "thomaswelton/laravel-gravatar": "^1.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

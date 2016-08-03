@@ -99,11 +99,27 @@ class UserController extends Controller
         return view('account', ['user' => Auth::user()]);
     }
 
+    //
+    // Stub Functions
+    //
 
     public function output(){
 
         return view('output');
 
     }
+
+    public function create(){
+        return view('create');
+    }
+
+    public function profile(){
+
+
+
+        return view('profile');
+    }
+
+
 
 }
