@@ -1,0 +1,279 @@
+
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,400,500,600';
+body {
+    background-color: #1B1D21;
+    color: #F2F2F2;
+    font-family: 'Raleway', sans-serif;
+}
+.row {
+    padding-top: 100px;
+}
+.navbar {
+    background-color: #2e3436;
+    border-color: #2e3436;
+}
+#canvas{
+    width:100%;
+}
+.img-t{
+    font-family: 'Raleway', sans-serif;
+    /**color: white;**/
+    font-weight: 500;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 48px;
+    color: #9D3E30;
+    z-index: -1;
+    display: block;
+    text-transform: uppercase;
+}
+.img-p{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 300;
+    padding-top: 20px;
+    font-size: 24px;
+    text-align: center;
+    z-index: -1;
+
+}
+.btn-primary{
+    background-color: #9D3E30;
+    border: hidden;
+}
+.btn-primary:hover{
+    background-color: #b74335;
+}
+
+
+/**
+*
+*   Typed blinking cursor
+*
+**/
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0%      { opacity: 1; }
+    50%     { opacity: 0; }
+    100%    { opacity: 1; }
+}
+@-webkit-keyframes blink {
+    0%      { opacity: 1; }
+    50%     { opacity: 0; }
+    100%    { opacity: 1; }
+}
+@-moz-keyframes blink{
+    0%      { opacity: 1; }
+    50%     { opacity: 0; }
+    100%    { opacity: 1; }
+}
+
+/**
+*
+*   Typing javascript styling
+*
+**/
+.stacks{
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    color: #9D3E30;
+    text-decoration: underline;
+    font-weight: 300;
+    padding-top: 20px;
+    font-size: 24px;
+    text-align: center;
+    z-index: -1;
+}
+h1,h2,h3,h4,p{
+    color: white;
+}
+
+/**
+*
+*   Individual post styling
+*
+**/
+
+.new-post{
+    padding: 16px 0;
+    padding-top: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.new-post header,
+.posts header{
+    margin-bottom: 20px;
+}
+
+.posts .post{
+    padding-left: 10px;
+    border-left: 3px solid #a21b24;
+    margin-bottom: 30px;
+}
+
+.posts .post .info {
+    color: #aaa;
+    font-style: italic;
+}
+
+.posts .post .interaction a {
+    border-right: 1px solid #6c6c6c;
+    padding: 2px;
+}
+
+/**
+*
+*   TextArea for posts
+*
+**/
+
+textarea.post-t {
+    resize: none;
+    background-color: #b9b7c1;
+    border: 1px solid #16131c;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #2a2a2a;
+    font-weight: 400;
+    font-style: normal;
+}
+
+textarea.post-t:focus{
+    outline: none;
+}
+
+/**
+*
+*   Error and success messages
+*
+**/
+
+.error {
+
+    color: red;
+}
+
+.error ul {
+    list-style: none;
+    margin-top: 5px;
+    padding: 0;
+
+}
+
+.success{
+    color: green;
+
+}
+
+/**
+*
+*   Modal Styling
+*
+**/
+
+.modal_title{
+    color: whitesmoke;
+    padding-bottom: 5px;
+    font-weight: 300;
+}
+
+.modal-p{
+    color: whitesmoke;
+    background-color: #1B1D21 !important;
+}
+
+.md_c {
+    background-color: #1B1D21;
+    border: none;
+}
+
+.md_x {
+ color: white;
+}
+
+.md_f {
+    border:none;
+}
+
+textarea.md_t {
+    resize: none;
+    background-color: #b9b7c1;
+    border: 1px solid #16131c;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #2a2a2a;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.edit {
+
+}
+
+.well {
+    padding-bottom: 50%;
+    margin-top: 200px;
+    background-color: #1d2325;
+    border: none;
+}
+
+/**
+
+    Drop down menu styling
+
+*/
+
+.dd-m {
+    background-color: #2e3436;
+    border-color: #2e3436;
+    border-top-color: #1B1D21;
+}
+
+.dd-m:hover {
+    background-color: #2e3436;
+}
+
+.dd-t {
+    background-color: #2e3436;
+    color: #CDCDCD !important;
+}
+
+/*
+*
+*   Guest Login and Register Links
+*
+*/
+.dd-lr {
+    background-color: #2e3436;
+    color: #CDCDCD !important;
+}
+
+.dd-lr:hover {
+    background-color: transparent;
+    color: #CDCDCD !important;
+    border: 1px solid #9D3E30;
+    border-bottom: none;
+    border-top: none;
+}
+
+.dd-t:focus {
+    background-color: #2e3436 !important;
+    border-color: #1d2325;
+    color: whitesmoke !important;
+}
+
+
+.log{
+    color: #9D3E30 !important;
+}
+
+.log:hover{
+    color: #C84C3B !important;
+}
