@@ -99,4 +99,11 @@ class UserController extends Controller
         return view('account', ['user' => Auth::user()]);
     }
 
+
+    public function output(){
+
+        return view('output');
+
+    }
+
 }
