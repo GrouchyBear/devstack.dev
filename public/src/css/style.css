@@ -134,6 +134,7 @@ h1,h2,h3,h4,p{
 
 textarea.post-t {
     resize: none;
+    width:25%;
     background-color: #b9b7c1;
     border: 1px solid #16131c;
     -webkit-border-radius: 10px;
