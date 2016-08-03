@@ -123,7 +123,12 @@ Route::post('/signup', [
 |--------------------------------------------------------------------------
 */
 
-Route::post('/submit', function(Request $request){
+Route::post('/feed-x', function(Illuminate\Http\Request $request){
     $content = $request['content'];
     return view('output', ['content' => $content]);
-})->name('submit');
+})->name('feed-x');
+
+Route::get('/output', [
+    'uses'  => 'UserController@output',
+    'as'    => 'output'
+]);
