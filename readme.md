@@ -4,7 +4,7 @@
 
 <i>This product is currently in prototype stage.<small><br>DO NOT EXPECT ALL FEATURES TO WORK</small></i>
 
-##Features
+## Features
 
 All features are currently in prototype state not all are working and some only half function.
 
@@ -13,6 +13,6 @@ All features are currently in prototype state not all are working and some only 
 * Share Snippets
 * Messaging between accounts (coming soon)
 
-##TODO
+## TODO
 
 The list of current TODO's is rather large, but I am currently working on the <i> profile systems</i>.
